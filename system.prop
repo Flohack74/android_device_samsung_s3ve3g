@@ -1,5 +1,7 @@
 # System.prop for s3ve3g
 
+ro.product.device=s3ve3g
+
 # Audio and Media
 av.offload.enable=false
 media.aac_51_output_enabled=true
