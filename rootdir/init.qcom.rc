@@ -372,7 +372,7 @@ on boot
 
     # Auto Brightness
     chown system system  /sys/class/backlight/panel/auto_brightness
-    chmod 0660 /sys/class/backlight/panel/auto_brightness
+    chmod 0666 /sys/class/backlight/panel/auto_brightness
 
     # LCD mdnie and panel work
     chown system system /sys/class/mdnie/mdnie/negative
@@ -596,10 +596,10 @@ service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
     oneshot
 
 on property:bluetooth.hciattach=true
-    start hciattach
+    write /sys/module/hci_smd/parameters/hcismd_set 1
 
 on property:bluetooth.hciattach=false
-    setprop bluetooth.status off
+    write /sys/module/hci_smd/parameters/hcismd_set 0
 
 service irsc_util /system/bin/irsc_util "/etc/sec_config"
     class main
