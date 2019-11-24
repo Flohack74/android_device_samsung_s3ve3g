@@ -154,19 +154,16 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-    <item>5</item>
-    <item>15</item>
-    <item>50</item>
-    <item>100</item>
-    <item>200</item>
-    <item>400</item>
-    <item>1000</item>
-    <item>2000</item>
-    <item>3000</item>
-    <item>5000</item>
-    <item>10000</item>
-    <item>30000</item>
-    </integer-array>
+        <item>1</item>
+        <item>4</item>
+        <item>40</item>
+        <item>350</item>
+        <item>600</item>
+        <item>1000</item>
+        <item>1600</item>
+        <item>3000</item>
+        <item>10000</item>
+</integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
          in the config_autoBrightnessLevels array.  This array should have size one greater
@@ -174,22 +171,18 @@
          The brightness values must be between 0 and 255 and be non-decreasing.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-    <item>3</item>   <!-- 0-5 -->
-    <item>6</item>   <!-- 5-15 -->
-    <item>16</item>   <!-- 15-50 -->
-    <item>38</item>   <!-- 50-100 -->
-    <item>48</item>   <!-- 100-200 -->
-    <item>55</item>   <!-- 200-400 -->
-    <item>64</item>   <!-- 400-1000 -->
-    <item>74</item>   <!-- 1000-2000 -->
-    <item>120</item>  <!-- 2000-3000 -->
-    <item>164</item>  <!-- 3000-5000 -->
-    <item>225</item>  <!-- 5000-10000 -->
-    <item>255</item>  <!-- 10000-30000 -->
-    <item>255</item>  <!-- 30000+ -->
-
-
+        <item>13</item>   <!-- 0-1 -->
+        <item>26</item>   <!-- 1-4 -->
+        <item>73</item>   <!-- 4-40 -->
+        <item>88</item>   <!-- 40-350 -->
+        <item>130</item>  <!-- 350-600 -->
+        <item>167</item>  <!-- 600-1000 -->
+        <item>204</item>  <!-- 1000-1600 -->
+        <item>240</item>  <!-- 1600-3000 -->
+        <item>254</item>  <!-- 3000-10000 -->
+        <item>255</item>  <!-- 10000+ -->
     </integer-array>
+
 
     <!-- MMS user agent string -->
     <string name="config_mms_user_agent" translatable="false">Android-Mms/2.0</string>
