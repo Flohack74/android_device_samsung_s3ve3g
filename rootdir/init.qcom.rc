@@ -672,7 +672,7 @@ service time_daemon /system/bin/time_daemon
     user root
     group root
 
-service init_wlan_bt /system/bin/sh /system/etc/init_wlan_bt.sh
+service init_wlan_bt /system/bin/sh /system/etc/init_hcismd_up.sh
     class main
     user root
     group root
