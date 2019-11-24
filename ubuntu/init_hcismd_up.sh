@@ -7,6 +7,9 @@ MAXTRIES=15
 
 export LD_LIBRARY_PATH=/vendor/lib64:/system/lib64:/vendor/lib:/system/lib
 
+/system/bin/insmod /system/lib/modules/wlan.ko
+/system/bin/insmod /system/lib/modules/hci_smd.ko
+
 #Wifi enabler
 j=1
 while [ ! $j -gt $MAXTRIES ]  ; do
