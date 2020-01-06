@@ -59,3 +59,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/s3ve3g
 
 # Optimization
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := false
+
+# Ubuntu
+BOARD_HEALTHD_CUSTOM_CHARGER_RES := $(LOCAL_PATH)/charger/images
+
