@@ -95,6 +95,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
+# HW decoding
+PRODUCT_PACKAGES += \
+    libmedia_compat \
+    minimediaservice
+
 # End Ubuntu Touch
 
 # Inherit from qcom-common
