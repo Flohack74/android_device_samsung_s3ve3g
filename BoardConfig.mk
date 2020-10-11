@@ -34,6 +34,7 @@ TARGET_UNIFIED_DEVICE := true
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := androidboot.bootdevice=msm_sdcc.1 androidboot.hardware=qcom user_debug=23 security=apparmor apparmor=1
+BOARD_KERNEL_CMDLINE += systempart=/dev/mmcblk0p23
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x1e00000 --base 0x00000000
