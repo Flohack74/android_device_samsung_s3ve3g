@@ -54,7 +54,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/fstab.qcom
-TARGET_RECOVERY_DEVICE_DIRS := $(LOCAL_PATH)
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/s3ve3g
